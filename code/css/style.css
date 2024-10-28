@@ -171,7 +171,7 @@ main{
 @media (max-width: 720px) {
 
     header{
-        margin-bottom: 100px;
+        margin-bottom: 150px;
     }
 
     header i {
@@ -183,17 +183,24 @@ main{
     }
 
     #box{
-        gap: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 70px;
+        margin: 0 auto;
     }
 
     .per {
         width: 60px;
         height: 90px;
-        scale: .6;
+        scale: 1.5;
     }
 
     .per h1 {
         font-size: 1.3rem;
+    }
+
+    #btnGroup{
+        margin-bottom: 150px;
     }
 
     #btnGroup label {
@@ -221,13 +228,61 @@ main{
     }
 
     #box{
-        gap: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        margin: 0 auto;
     }
 
     .per {
         width: 60px;
         height: 90px;
-        scale: .5;
+        scale: 1;
+    }
+
+    .per h1 {
+        font-size: 1.3rem;
+    }
+
+    #btnGroup{
+        margin-bottom: 70px;
+    }
+
+    #btnGroup label {
+        width: 45px;
+        height: 45px;
+    }
+
+    #btnGroup h3{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    header{
+        margin-bottom: 150px;
+    }
+
+    header i {
+        font-size: 2rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    #box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin: 0 auto;
+    }
+
+    .per {
+        width: 60px;
+        height: 90px;
+        scale: 1;
     }
 
     .per h1 {
