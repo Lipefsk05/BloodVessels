@@ -1,0 +1,141 @@
+body{
+    background-color: #fff0da;
+}
+header{
+    background-color: #bb1919;
+    color: #fff0da;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+header i{
+    font-size: 300%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+}
+#box{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* .per{
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 5%;
+    outline: 5px solid #bb1919;
+}
+.per h1{
+    margin: 0;
+    background-color: #bb1919;
+    color: #fff7e6  ;
+}
+
+.perFull {
+    color: #bb1919;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+} */
+
+/* ---------------------------------------------------------------- */
+
+.per{
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 5%;
+    outline: 5px solid #bb1919;
+    height: 111px;
+}
+.per h1{
+    transform: translateY(-65px);
+    margin: 0;
+    background-color: #bb1919;
+    color: #fff0da  ;
+}
+
+.perFull {
+    transform: translateY(-65px);
+    color: #bb1919;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* ---------------------------------------------------------------- */
+
+
+.per i{
+    font-size: 400%;
+}
+
+.perFull-show {
+    opacity: 1;
+}
+
+.perFull-hide {
+    opacity: 0;
+}
+
+.perEmpty {
+    color: #c8bcaa;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.perEmpty-show {
+    opacity: 1;
+}
+
+.perEmpty-hide {
+    opacity: 0;
+}
+
+#btnGroup{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: 10%;
+}
+
+#btnGroup h1{
+    padding: 10%;
+}
+
+#btnGroup input{
+    display: none;
+}
+
+#btnGroup label{
+    background-color: #bb1919;
+    color: #fff0da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 10%;
+    text-align: center;
+    transition: .1s;
+}
+
+#btnGroup label:hover {
+    background-color: #a51717;
+    scale: 1.1;
+}
+
+/* Estilo quando o input radio está checked */
+#btnGroup input.btnInput:checked + label {
+    background-color: #8d1414;
+    scale: 1.1;
+}
+
