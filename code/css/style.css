@@ -13,40 +13,20 @@ header{
 header i{
     font-size: 300%;
 }
+
+header h1{
+    margin: 0 2%;
+}
 main{
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 250px);
 }
 #box{
     display: flex;
     justify-content: center;
     gap: 5%;
 }
-
-/* ---------------------------------------------------------------- */
-
-/* .per{
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 5%;
-    outline: 5px solid #bb1919;
-}
-.per h1{
-    margin: 0;
-    background-color: #bb1919;
-    color: #fff7e6  ;
-}
-
-.perFull {
-    color: #bb1919;
-    opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-} */
-
-/* ---------------------------------------------------------------- */
 
 .per{
     border-radius: 5%;
@@ -70,9 +50,6 @@ main{
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
-
-/* ---------------------------------------------------------------- */
-
 
 .per i{
     font-size: 400%;
@@ -105,6 +82,7 @@ main{
     justify-content: center;
     gap: 2%;
     margin-bottom: 10%;
+    align-items: center;
 }
 
 #btnGroup h1{
@@ -116,26 +94,156 @@ main{
 }
 
 #btnGroup label{
-    background-color: #bb1919;
+    /* background-color: #bb1919; */
+    background-image: url('../assets/img/drop-simple-fill-1.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #fff0da;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 10%;
     text-align: center;
     transition: .1s;
 }
 
 #btnGroup label:hover {
-    background-color: #a51717;
+    /* background-color: #a51717; */
+    background-image: url('../assets/img/drop-simple-fill-2.svg');
     scale: 1.1;
 }
 
 /* Estilo quando o input radio está checked */
 #btnGroup input.btnInput:checked + label {
-    background-color: #8d1414;
+    /* background-color: #8d1414; */
+    background-image: url('../assets/img/drop-simple-fill-3.svg');
     scale: 1.1;
+    transform: translateY(10px);
 }
 
+#btnGroup h3{
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 1250px) {
+
+    header{
+        margin-bottom: 100px;
+    }
+
+    header i {
+        font-size: 2rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    #box{
+        gap: 4%;
+    }
+
+    .per {
+        width: 60px;
+        height: 90px;
+        scale: 1;
+    }
+
+    .per h1 {
+        font-size: 1.3rem;
+    }
+
+    #btnGroup label {
+        width: 60px;
+        height: 60px;
+    }
+
+    #btnGroup h3{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    header{
+        margin-bottom: 100px;
+    }
+
+    header i {
+        font-size: 2rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    #box{
+        gap: 0;
+    }
+
+    .per {
+        width: 60px;
+        height: 90px;
+        scale: .6;
+    }
+
+    .per h1 {
+        font-size: 1.3rem;
+    }
+
+    #btnGroup label {
+        width: 50px;
+        height: 50px;
+    }
+
+    #btnGroup h3{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header{
+        margin-bottom: 150px;
+    }
+
+    header i {
+        font-size: 2rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    #box{
+        gap: 0;
+    }
+
+    .per {
+        width: 60px;
+        height: 90px;
+        scale: .5;
+    }
+
+    .per h1 {
+        font-size: 1.3rem;
+    }
+
+    #btnGroup{
+        margin-bottom: 70px;
+    }
+
+    #btnGroup label {
+        width: 45px;
+        height: 45px;
+    }
+
+    #btnGroup h3{
+        font-size: 10px;
+    }
+}
